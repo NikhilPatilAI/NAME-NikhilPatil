@@ -6,7 +6,6 @@
 <table>
 <tr>
 <td valign="top" width="65%">
-
 👨‍💻 About Me
 👀 I’m interested in Coding and building beautiful, functional Apps.
 
