@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Nikhil Patil — Generative AI, MLOps, Machine Learning. Mumbai, India. Open to work.">
+  <title>Nikhil Patil — Generative AI · MLOps · Machine Learning</title>
+
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0F141B"/>
+      <stop offset="55%"  stop-color="#0C1016"/>
+      <stop offset="100%" stop-color="#141A22"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="82%" cy="46%" r="46%">
+      <stop offset="0%"   stop-color="#E9C46A" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#E9C46A" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="6%" cy="88%" r="42%">
+      <stop offset="0%"   stop-color="#E76F51" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#E76F51" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="clip">
+      <rect x="0" y="0" width="1200" height="320" rx="18"/>
+    </clipPath>
+
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+    <style>
+      .serif { font-family: 'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif; }
+      .mono  { font-family: 'JetBrains Mono','SF Mono','Cascadia Mono','Roboto Mono',Consolas,monospace; }
+
+      .r    { opacity: 0; animation: fu .95s cubic-bezier(.16,.84,.28,1) forwards; }
+      .d1   { animation-delay: .10s } .d2 { animation-delay: .26s }
+      .d3   { animation-delay: .42s } .d4 { animation-delay: .62s }
+      .d5   { animation-delay: .78s } .d6 { animation-delay: .94s }
+      @keyframes fu { from { opacity:0; transform: translateY(16px) } to { opacity:1; transform: translateY(0) } }
+
+      .rule { stroke-dasharray: 528; stroke-dashoffset: 528; animation: draw 1.5s cubic-bezier(.2,.8,.2,1) .52s forwards; }
+      @keyframes draw { to { stroke-dashoffset: 0 } }
+
+      .dot { animation: blink 2.6s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.28 } }
+
+      .grid { animation: breathe 7s ease-in-out 1.4s infinite; }
+      @keyframes breathe { 0%,100% { opacity:1 } 50% { opacity:.66 } }
+
+      .row  { opacity: 0; animation: rin .7s ease forwards; }
+      .k0{animation-delay:.70s} .k1{animation-delay:.79s} .k2{animation-delay:.88s}
+      .k3{animation-delay:.97s} .k4{animation-delay:1.06s} .k5{animation-delay:1.15s}
+      .k6{animation-delay:1.24s}
+      @keyframes rin { from { opacity:0; transform: translateX(10px) } to { opacity:1; transform: translateX(0) } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="320" fill="url(#card)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+    <rect width="1200" height="320" fill="url(#glow2)"/>
+    <rect width="1200" height="320" filter="url(#grain)" opacity=".055"/>
+
+    <!-- print crop marks -->
+    <g stroke="#E9C46A" stroke-opacity=".26" stroke-width="1">
+      <path d="M28 44 v-16 h16"/>
+      <path d="M1172 44 v-16 h-16"/>
+      <path d="M28 276 v16 h16"/>
+      <path d="M1172 276 v16 h-16"/>
+    </g>
+
+    <!-- eyebrow -->
+    <text class="mono r d1" x="72" y="58" font-size="11" letter-spacing="5" fill="#E76F51">MUMBAI · INDIA</text>
+
+    <!-- name -->
+    <text class="serif r d2" x="70" y="142" font-size="78" letter-spacing="3" fill="#F2F5F8">NIKHIL</text>
+    <text class="serif r d3" x="70" y="216" font-size="78" letter-spacing="3" fill="#E9C46A">PATIL</text>
+
+    <line class="rule" x1="72" y1="250" x2="600" y2="250" stroke="#E9C46A" stroke-opacity=".42" stroke-width="1"/>
+
+    <text class="mono r d5" x="72" y="283" font-size="13.5" letter-spacing="3.2" fill="#8B949E">GENERATIVE AI · MLOPS · MACHINE LEARNING</text>
+
+    <!-- open to work -->
+    <g class="r d4">
+      <rect x="968" y="48" width="164" height="26" rx="13" fill="#E9C46A" fill-opacity=".07" stroke="#E9C46A" stroke-opacity=".34"/>
+      <circle class="dot" cx="990" cy="61" r="3.4" fill="#E76F51"/>
+      <text class="mono" x="1006" y="65" font-size="10" letter-spacing="2.1" fill="#E9C46A">OPEN TO WORK</text>
+    </g>
+
+    <!-- causal attention mask -->
+    <g class="grid" fill="#E9C46A">
+      <g class="row k0"><rect x="968" y="96" width="20" height="20" rx="3" fill-opacity=".82"/><rect x="992" y="96" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1016" y="96" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1040" y="96" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1064" y="96" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1088" y="96" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1112" y="96" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k1"><rect x="968" y="120" width="20" height="20" rx="3" fill-opacity=".35"/><rect x="992" y="120" width="20" height="20" rx="3" fill-opacity=".70"/><rect x="1016" y="120" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1040" y="120" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1064" y="120" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1088" y="120" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1112" y="120" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k2"><rect x="968" y="144" width="20" height="20" rx="3" fill-opacity=".20"/><rect x="992" y="144" width="20" height="20" rx="3" fill-opacity=".52"/><rect x="1016" y="144" width="20" height="20" rx="3" fill-opacity=".86"/><rect x="1040" y="144" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1064" y="144" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1088" y="144" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1112" y="144" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k3"><rect x="968" y="168" width="20" height="20" rx="3" fill-opacity=".46"/><rect x="992" y="168" width="20" height="20" rx="3" fill-opacity=".16"/><rect x="1016" y="168" width="20" height="20" rx="3" fill-opacity=".64"/><rect x="1040" y="168" width="20" height="20" rx="3" fill-opacity=".74"/><rect x="1064" y="168" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1088" y="168" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1112" y="168" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k4"><rect x="968" y="192" width="20" height="20" rx="3" fill-opacity=".28"/><rect x="992" y="192" width="20" height="20" rx="3" fill-opacity=".44"/><rect x="1016" y="192" width="20" height="20" rx="3" fill-opacity=".24"/><rect x="1040" y="192" width="20" height="20" rx="3" fill-opacity=".68"/><rect x="1064" y="192" width="20" height="20" rx="3" fill-opacity=".90"/><rect x="1088" y="192" width="20" height="20" rx="3" fill-opacity=".05"/><rect x="1112" y="192" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k5"><rect x="968" y="216" width="20" height="20" rx="3" fill-opacity=".18"/><rect x="992" y="216" width="20" height="20" rx="3" fill-opacity=".36"/><rect x="1016" y="216" width="20" height="20" rx="3" fill-opacity=".56"/><rect x="1040" y="216" width="20" height="20" rx="3" fill-opacity=".30"/><rect x="1064" y="216" width="20" height="20" rx="3" fill-opacity=".62"/><rect x="1088" y="216" width="20" height="20" rx="3" fill-opacity=".78"/><rect x="1112" y="216" width="20" height="20" rx="3" fill-opacity=".05"/></g>
+      <g class="row k6"><rect x="968" y="240" width="20" height="20" rx="3" fill-opacity=".40"/><rect x="992" y="240" width="20" height="20" rx="3" fill-opacity=".22"/><rect x="1016" y="240" width="20" height="20" rx="3" fill-opacity=".48"/><rect x="1040" y="240" width="20" height="20" rx="3" fill-opacity=".34"/><rect x="1064" y="240" width="20" height="20" rx="3" fill-opacity=".72"/><rect x="1088" y="240" width="20" height="20" rx="3" fill-opacity=".42"/><rect x="1112" y="240" width="20" height="20" rx="3" fill-opacity=".88"/></g>
+    </g>
+    <text class="mono r d6" x="968" y="280" font-size="9.5" letter-spacing="2.4" fill="#5C6570">causal attention mask</text>
+
+    <rect x=".5" y=".5" width="1199" height="319" rx="18" fill="none" stroke="#E9C46A" stroke-opacity=".14"/>
+  </g>
+</svg>
