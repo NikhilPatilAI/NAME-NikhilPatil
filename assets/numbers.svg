@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="By the numbers: 10,000+ document embeddings indexed for retrieval; 4 specialized agents in one LangGraph; under 3 seconds end-to-end query resolution; 5,000 curated SFT samples for instruction tuning; 2 open models fine-tuned on a single GPU; 500K+ images curated and labelled; about 30% less checkout time from the vision pipeline; 28 podcast episodes teaching AI in Hinglish.">
+  <title>By the numbers</title>
+
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0F141B"/>
+      <stop offset="55%"  stop-color="#0C1016"/>
+      <stop offset="100%" stop-color="#141A22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="46%" r="46%">
+      <stop offset="0%"   stop-color="#E9C46A" stop-opacity=".11"/>
+      <stop offset="100%" stop-color="#E9C46A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="6%" cy="88%" r="42%">
+      <stop offset="0%"   stop-color="#E76F51" stop-opacity=".09"/>
+      <stop offset="100%" stop-color="#E76F51" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="1200" height="430" rx="18"/>
+    </clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <style>
+      .serif { font-family: 'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif; }
+      .mono  { font-family: 'JetBrains Mono','SF Mono','Cascadia Mono','Roboto Mono',Consolas,monospace; }
+      .r { opacity: 0; animation: fu .9s cubic-bezier(.16,.84,.28,1) forwards; }
+      @keyframes fu { from { opacity:0; transform: translateY(14px) } to { opacity:1; transform: translateY(0) } }
+      .dot { animation: blink 2.6s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.28 } }
+      .rule { stroke-dasharray: 1120; stroke-dashoffset: 1120; animation: draw 1.6s cubic-bezier(.2,.8,.2,1) .2s forwards; }
+      @keyframes draw { to { stroke-dashoffset: 0 } }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="430" fill="url(#card)"/>
+    <rect width="1200" height="430" fill="url(#glow)"/>
+    <rect width="1200" height="430" fill="url(#glow2)"/>
+    <rect width="1200" height="430" filter="url(#grain)" opacity=".055"/>
+
+    <rect x="880" y="236" width="280" height="154" rx="10" fill="#E9C46A" fill-opacity=".045"/>
+    <g stroke="#E9C46A" stroke-opacity=".13" stroke-width="1">
+      <line x1="320" y1="40" x2="320" y2="390"/>
+      <line x1="600" y1="40" x2="600" y2="390"/>
+      <line x1="880" y1="40" x2="880" y2="390"/>
+    </g>
+    <line class="rule" x1="40" y1="233" x2="1160" y2="233" stroke="#E9C46A" stroke-opacity=".22" stroke-width="1"/>
+
+    <g class="r" style="animation-delay:0.12s">
+      <text class="mono" x="74" y="70" font-size="14" letter-spacing="3" fill="#E76F51">01</text>
+      <text class="serif" x="72" y="146" font-size="66" letter-spacing="1" fill="#F2F5F8">10,000<tspan fill="#E9C46A">+</tspan></text>
+      <text class="mono" x="74" y="182" font-size="14" letter-spacing="1" fill="#8B949E">DOCUMENT EMBEDDINGS</text>
+      <text class="mono" x="74" y="204" font-size="14" letter-spacing="1" fill="#8B949E">INDEXED FOR RETRIEVAL</text>
+    </g>
+    <g class="r" style="animation-delay:0.20s">
+      <text class="mono" x="354" y="70" font-size="14" letter-spacing="3" fill="#E76F51">02</text>
+      <text class="serif" x="352" y="146" font-size="66" letter-spacing="1" fill="#F2F5F8">4</text>
+      <text class="mono" x="354" y="182" font-size="14" letter-spacing="1" fill="#8B949E">SPECIALIZED AGENTS</text>
+      <text class="mono" x="354" y="204" font-size="14" letter-spacing="1" fill="#8B949E">IN ONE LANGGRAPH</text>
+    </g>
+    <g class="r" style="animation-delay:0.28s">
+      <text class="mono" x="634" y="70" font-size="14" letter-spacing="3" fill="#E76F51">03</text>
+      <text class="serif" x="632" y="146" font-size="66" letter-spacing="1" fill="#F2F5F8"><tspan fill="#E9C46A">&lt;</tspan><tspan fill="#F2F5F8">3</tspan><tspan fill="#E9C46A">s</tspan></text>
+      <text class="mono" x="634" y="182" font-size="14" letter-spacing="1" fill="#8B949E">END-TO-END</text>
+      <text class="mono" x="634" y="204" font-size="14" letter-spacing="1" fill="#8B949E">QUERY RESOLUTION</text>
+    </g>
+    <g class="r" style="animation-delay:0.36s">
+      <text class="mono" x="914" y="70" font-size="14" letter-spacing="3" fill="#E76F51">04</text>
+      <text class="serif" x="912" y="146" font-size="66" letter-spacing="1" fill="#F2F5F8">5,000</text>
+      <text class="mono" x="914" y="182" font-size="14" letter-spacing="1" fill="#8B949E">CURATED SFT SAMPLES</text>
+      <text class="mono" x="914" y="204" font-size="14" letter-spacing="1" fill="#8B949E">FOR INSTRUCTION TUNING</text>
+    </g>
+    <g class="r" style="animation-delay:0.44s">
+      <text class="mono" x="74" y="260" font-size="14" letter-spacing="3" fill="#E76F51">05</text>
+      <text class="serif" x="72" y="336" font-size="66" letter-spacing="1" fill="#F2F5F8">2</text>
+      <text class="mono" x="74" y="372" font-size="14" letter-spacing="1" fill="#8B949E">OPEN MODELS FINE-TUNED</text>
+      <text class="mono" x="74" y="394" font-size="14" letter-spacing="1" fill="#8B949E">ON A SINGLE GPU</text>
+    </g>
+    <g class="r" style="animation-delay:0.52s">
+      <text class="mono" x="354" y="260" font-size="14" letter-spacing="3" fill="#E76F51">06</text>
+      <text class="serif" x="352" y="336" font-size="66" letter-spacing="1" fill="#F2F5F8">500K<tspan fill="#E9C46A">+</tspan></text>
+      <text class="mono" x="354" y="372" font-size="14" letter-spacing="1" fill="#8B949E">IMAGES CURATED</text>
+      <text class="mono" x="354" y="394" font-size="14" letter-spacing="1" fill="#8B949E">AND LABELLED</text>
+    </g>
+    <g class="r" style="animation-delay:0.60s">
+      <text class="mono" x="634" y="260" font-size="14" letter-spacing="3" fill="#E76F51">07</text>
+      <text class="serif" x="632" y="336" font-size="66" letter-spacing="1" fill="#F2F5F8">~30<tspan fill="#E9C46A">%</tspan></text>
+      <text class="mono" x="634" y="372" font-size="14" letter-spacing="1" fill="#8B949E">LESS CHECKOUT TIME</text>
+      <text class="mono" x="634" y="394" font-size="14" letter-spacing="1" fill="#8B949E">FROM THE VISION PIPELINE</text>
+    </g>
+    <g class="r" style="animation-delay:0.68s">
+      <text class="mono" x="914" y="260" font-size="14" letter-spacing="3" fill="#E76F51">08</text><circle class="dot" cx="954" cy="255" r="4" fill="#E76F51"/>
+      <text class="serif" x="912" y="336" font-size="66" letter-spacing="1" fill="#F2F5F8">28</text>
+      <text class="mono" x="914" y="372" font-size="14" letter-spacing="1" fill="#8B949E">PODCAST EPISODES</text>
+      <text class="mono" x="914" y="394" font-size="14" letter-spacing="1" fill="#8B949E">TEACHING AI IN HINGLISH</text>
+    </g>
+
+    <rect x=".5" y=".5" width="1199" height="429" rx="18" fill="none" stroke="#E9C46A" stroke-opacity=".14"/>
+  </g>
+</svg>
