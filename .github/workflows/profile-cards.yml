@@ -1,0 +1,69 @@
+name: Refresh profile cards
+
+# Regenerates the live images the README embeds from ./profile/:
+# the contribution snake and the top languages card. Both are built here
+# instead of loading from public card services, so they never break.
+
+on:
+  schedule:
+    - cron: "41 2 * * *" # daily, 08:11 IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # gold dots on a neutral grid, coral snake: matches the README cards
+          # and stays readable on both light and dark GitHub themes
+          outputs: |
+            profile/snake.svg?color_snake=#E76F51&color_dots=#8B949E26,#E9C46A4D,#E9C46A8C,#E9C46AC7,#E9C46A&color_dot_border=#00000000
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          # hide=... drops languages that only come from Flutter platform
+          # scaffolding (C++, CMake, Swift, ...), so the card reflects real work
+          options: >-
+            {"username": "${{ github.repository_owner }}",
+             "layout": "compact",
+             "langs_count": 8,
+             "card_width": 495,
+             "size_weight": 0.5,
+             "count_weight": 0.5,
+             "hide": "html,css,c,c++,c#,cmake,swift,objective-c,kotlin,ruby,dockerfile",
+             "custom_title": "Most used languages",
+             "hide_border": true,
+             "bg_color": "0D1117",
+             "title_color": "E9C46A",
+             "text_color": "8B949E"}
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit refreshed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh profile cards"
+          git push

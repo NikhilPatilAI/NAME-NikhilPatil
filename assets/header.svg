@@ -37,7 +37,7 @@
       .d5   { animation-delay: .78s } .d6 { animation-delay: .94s }
       @keyframes fu { from { opacity:0; transform: translateY(16px) } to { opacity:1; transform: translateY(0) } }
 
-      .rule { stroke-dasharray: 528; stroke-dashoffset: 528; animation: draw 1.5s cubic-bezier(.2,.8,.2,1) .52s forwards; }
+      .rule { stroke-dasharray: 548; stroke-dashoffset: 548; animation: draw 1.5s cubic-bezier(.2,.8,.2,1) .52s forwards; }
       @keyframes draw { to { stroke-dashoffset: 0 } }
 
       .dot { animation: blink 2.6s ease-in-out infinite; }
@@ -69,21 +69,21 @@
     </g>
 
     <!-- eyebrow -->
-    <text class="mono r d1" x="72" y="58" font-size="11" letter-spacing="5" fill="#E76F51">MUMBAI · INDIA</text>
+    <text class="mono r d1" x="72" y="60" font-size="14" letter-spacing="5" fill="#E76F51">MUMBAI · INDIA</text>
 
     <!-- name -->
     <text class="serif r d2" x="70" y="142" font-size="78" letter-spacing="3" fill="#F2F5F8">NIKHIL</text>
     <text class="serif r d3" x="70" y="216" font-size="78" letter-spacing="3" fill="#E9C46A">PATIL</text>
 
-    <line class="rule" x1="72" y1="250" x2="600" y2="250" stroke="#E9C46A" stroke-opacity=".42" stroke-width="1"/>
+    <line class="rule" x1="72" y1="250" x2="620" y2="250" stroke="#E9C46A" stroke-opacity=".42" stroke-width="1"/>
 
-    <text class="mono r d5" x="72" y="283" font-size="13.5" letter-spacing="3.2" fill="#8B949E">GENERATIVE AI · MLOPS · MACHINE LEARNING</text>
+    <text class="mono r d5" x="72" y="285" font-size="17" letter-spacing="3" fill="#A3ACB6">GENERATIVE AI · MLOPS · MACHINE LEARNING</text>
 
     <!-- open to work -->
     <g class="r d4">
-      <rect x="968" y="48" width="164" height="26" rx="13" fill="#E9C46A" fill-opacity=".07" stroke="#E9C46A" stroke-opacity=".34"/>
-      <circle class="dot" cx="990" cy="61" r="3.4" fill="#E76F51"/>
-      <text class="mono" x="1006" y="65" font-size="10" letter-spacing="2.1" fill="#E9C46A">OPEN TO WORK</text>
+      <rect x="958" y="44" width="174" height="32" rx="16" fill="#E9C46A" fill-opacity=".07" stroke="#E9C46A" stroke-opacity=".34"/>
+      <circle class="dot" cx="980" cy="60" r="4" fill="#E76F51"/>
+      <text class="mono" x="996" y="65" font-size="12.5" letter-spacing="2" fill="#E9C46A">OPEN TO WORK</text>
     </g>
 
     <!-- causal attention mask -->
@@ -96,7 +96,7 @@
       <g class="row k5"><rect x="968" y="216" width="20" height="20" rx="3" fill-opacity=".18"/><rect x="992" y="216" width="20" height="20" rx="3" fill-opacity=".36"/><rect x="1016" y="216" width="20" height="20" rx="3" fill-opacity=".56"/><rect x="1040" y="216" width="20" height="20" rx="3" fill-opacity=".30"/><rect x="1064" y="216" width="20" height="20" rx="3" fill-opacity=".62"/><rect x="1088" y="216" width="20" height="20" rx="3" fill-opacity=".78"/><rect x="1112" y="216" width="20" height="20" rx="3" fill-opacity=".05"/></g>
       <g class="row k6"><rect x="968" y="240" width="20" height="20" rx="3" fill-opacity=".40"/><rect x="992" y="240" width="20" height="20" rx="3" fill-opacity=".22"/><rect x="1016" y="240" width="20" height="20" rx="3" fill-opacity=".48"/><rect x="1040" y="240" width="20" height="20" rx="3" fill-opacity=".34"/><rect x="1064" y="240" width="20" height="20" rx="3" fill-opacity=".72"/><rect x="1088" y="240" width="20" height="20" rx="3" fill-opacity=".42"/><rect x="1112" y="240" width="20" height="20" rx="3" fill-opacity=".88"/></g>
     </g>
-    <text class="mono r d6" x="968" y="280" font-size="9.5" letter-spacing="2.4" fill="#5C6570">causal attention mask</text>
+    <text class="mono r d6" x="1050" y="284" text-anchor="middle" font-size="12" letter-spacing="1.4" fill="#6E7781">causal attention mask</text>
 
     <rect x=".5" y=".5" width="1199" height="319" rx="18" fill="none" stroke="#E9C46A" stroke-opacity=".14"/>
   </g>
